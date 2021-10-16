@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">EMI Calculator</string>
+    <string name="principal_amount">Principal Amount</string>
+    <string name="interest_rate">Interest Rate</string>
+    <string name="total_years">Years</string>
+    <string name="emi">EMI</string>
+    <string name="ten">10</string>
+    <string name="fifteen">15</string>
+    <string name="twenty">20</string>
+    <string name="twenty_five">25</string>
+    <string name="thirty">30</string>
+    <string name="thirty_five">35</string>
+    <string name="forty">40</string>
+
+
+
+
+
+
+</resources>
