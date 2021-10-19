@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -21,8 +20,8 @@
 
         <EditText
             android:id="@+id/principal_amount"
-            android:inputType="number"
             android:hint="Total Cost of Property - Down Payment"
+            android:inputType="numberDecimal"
             android:textSize="12.5dp"/>
     </TableRow>
 
@@ -31,69 +30,73 @@
         android:id="@+id/tableRow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="91dp"
-        android:layout_marginTop="20dp">
+        tools:layout_editor_absoluteY="91dp">
 
-    <TextView
+        <TextView
             android:padding="10dip"
             android:text="@string/interest_rate" />
 
-        <EditText android:id="@+id/interest_rate"
-            android:inputType="number"
+        <EditText
+            android:id="@+id/interest_rate"
             android:hint="Rate in Percentage : 7.5"
-            android:textSize="12.5dp"/>
+            android:inputType="numberDecimal"
+            android:textSize="12.5dp" />
 
     </TableRow>
 
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="130dp"
-        android:layout_marginTop="20dp">
+        tools:layout_editor_absoluteY="130dp">
 
-    <TextView
+        <TextView
             android:padding="10dip"
             android:text="@string/total_years" />
 
-        <EditText android:id="@+id/total_years"
-            android:inputType="number"
+        <EditText
+            android:id="@+id/total_years"
             android:hint="Amortization Period"
-            android:textSize="12.5dp"/>
+            android:inputType="numberDecimal"
+            android:textSize="12.5dp" />
 
     </TableRow>
 
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:paddingTop="20dip"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="145dp"
         tools:layout_editor_absoluteY="169dp"
-        android:layout_marginTop="20dp">
+        android:clickable="true">
 
-    <Button
+        <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_span="2"
             android:onClick="calculatePayments"
-            android:text="Calculate" />
+            android:text="Calculate"
+            tools:ignore="UsingOnClickInXml" />
 
     </TableRow>
 
     <TableRow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="237dp"
-        android:layout_marginTop="20dp">
+        tools:layout_editor_absoluteY="237dp">
 
-    <TextView
+        <TextView
             android:padding="10dip"
             android:text="@string/emi" />
 

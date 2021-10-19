@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void calculatePayments(View clickedButton){
 
-        double principalAmount = Integer.parseInt(principal.getText().toString());
-        double interestRate = Integer.parseInt(interest.getText().toString());
-        double totalYears = Integer.parseInt(years.getText().toString());
+        double principalAmount = Double.parseDouble(principal.getText().toString());
+        double interestRate = Double.parseDouble(interest.getText().toString());
+        double totalYears = Double.parseDouble(years.getText().toString());
 
         double p = principalAmount;
         double r = (interestRate/12)/100;
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         double r1 = Math.pow((1+r), n);
         double emi = p * ((r*r1)/(r1-1));
 
-        monthlyEMI.setText(new DecimalFormat(".##").format(emi));
+        monthlyEMI.setText(new DecimalFormat(".00").format(emi));
 
 
 
